@@ -1,0 +1,14 @@
+D:\C#\Teste\Teste\bin\Debug\net7.0\p15Teste.exe
+D:\C#\Teste\Teste\bin\Debug\net7.0\p15Teste.deps.json
+D:\C#\Teste\Teste\bin\Debug\net7.0\p15Teste.runtimeconfig.json
+D:\C#\Teste\Teste\bin\Debug\net7.0\p15Teste.dll
+D:\C#\Teste\Teste\bin\Debug\net7.0\p15Teste.pdb
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.AssemblyInfoInputs.cache
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.AssemblyInfo.cs
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.csproj.CoreCompileInputs.cache
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.dll
+D:\C#\Teste\Teste\obj\Debug\net7.0\refint\p15Teste.dll
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.pdb
+D:\C#\Teste\Teste\obj\Debug\net7.0\p15Teste.genruntimeconfig.cache
+D:\C#\Teste\Teste\obj\Debug\net7.0\ref\p15Teste.dll

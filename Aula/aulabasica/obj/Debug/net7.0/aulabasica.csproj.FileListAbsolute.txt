@@ -1,0 +1,14 @@
+D:\C#\aulabasica\bin\Debug\net7.0\aulabasica.exe
+D:\C#\aulabasica\bin\Debug\net7.0\aulabasica.deps.json
+D:\C#\aulabasica\bin\Debug\net7.0\aulabasica.runtimeconfig.json
+D:\C#\aulabasica\bin\Debug\net7.0\aulabasica.dll
+D:\C#\aulabasica\bin\Debug\net7.0\aulabasica.pdb
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.AssemblyInfoInputs.cache
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.AssemblyInfo.cs
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.csproj.CoreCompileInputs.cache
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.dll
+D:\C#\aulabasica\obj\Debug\net7.0\refint\aulabasica.dll
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.pdb
+D:\C#\aulabasica\obj\Debug\net7.0\aulabasica.genruntimeconfig.cache
+D:\C#\aulabasica\obj\Debug\net7.0\ref\aulabasica.dll

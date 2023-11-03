@@ -1,0 +1,14 @@
+D:\C#\Teste\test2\bin\Debug\net7.0\p14test2.exe
+D:\C#\Teste\test2\bin\Debug\net7.0\p14test2.deps.json
+D:\C#\Teste\test2\bin\Debug\net7.0\p14test2.runtimeconfig.json
+D:\C#\Teste\test2\bin\Debug\net7.0\p14test2.dll
+D:\C#\Teste\test2\bin\Debug\net7.0\p14test2.pdb
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.AssemblyInfoInputs.cache
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.AssemblyInfo.cs
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.csproj.CoreCompileInputs.cache
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.dll
+D:\C#\Teste\test2\obj\Debug\net7.0\refint\p14test2.dll
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.pdb
+D:\C#\Teste\test2\obj\Debug\net7.0\p14test2.genruntimeconfig.cache
+D:\C#\Teste\test2\obj\Debug\net7.0\ref\p14test2.dll

@@ -1,0 +1,14 @@
+D:\C#\p13Inheritance\bin\Debug\net7.0\p13Inheritance.exe
+D:\C#\p13Inheritance\bin\Debug\net7.0\p13Inheritance.deps.json
+D:\C#\p13Inheritance\bin\Debug\net7.0\p13Inheritance.runtimeconfig.json
+D:\C#\p13Inheritance\bin\Debug\net7.0\p13Inheritance.dll
+D:\C#\p13Inheritance\bin\Debug\net7.0\p13Inheritance.pdb
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.AssemblyInfoInputs.cache
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.AssemblyInfo.cs
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.csproj.CoreCompileInputs.cache
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.dll
+D:\C#\p13Inheritance\obj\Debug\net7.0\refint\p13Inheritance.dll
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.pdb
+D:\C#\p13Inheritance\obj\Debug\net7.0\p13Inheritance.genruntimeconfig.cache
+D:\C#\p13Inheritance\obj\Debug\net7.0\ref\p13Inheritance.dll

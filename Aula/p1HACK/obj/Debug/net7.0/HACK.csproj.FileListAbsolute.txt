@@ -1,0 +1,14 @@
+D:\C#\p1HACK\bin\Debug\net7.0\HACK.exe
+D:\C#\p1HACK\bin\Debug\net7.0\HACK.deps.json
+D:\C#\p1HACK\bin\Debug\net7.0\HACK.runtimeconfig.json
+D:\C#\p1HACK\bin\Debug\net7.0\HACK.dll
+D:\C#\p1HACK\bin\Debug\net7.0\HACK.pdb
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.AssemblyInfoInputs.cache
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.AssemblyInfo.cs
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.csproj.CoreCompileInputs.cache
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.dll
+D:\C#\p1HACK\obj\Debug\net7.0\refint\HACK.dll
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.pdb
+D:\C#\p1HACK\obj\Debug\net7.0\HACK.genruntimeconfig.cache
+D:\C#\p1HACK\obj\Debug\net7.0\ref\HACK.dll
