@@ -1,63 +1,58 @@
-namespace test
+namespace Portal_PostgreSQL.Infraestrutura;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public List<Aluno> Alunos { get; private set; } = new List<Aluno>();
+    public Form1()
     {
-        public List<Aluno> Alunos { get; private set; } = new List<Aluno>();
-        public Form1()
+        InitializeComponent();
+        ObterAlunos();
+    }
+
+    private void ObterAlunos()
+    {
+        Alunos = AlunosRepository.Get();
+
+        foreach(var aluno in Alunos)
         {
-            InitializeComponent();
+            lv_alunos.Items.Add(new ListViewItem(new string[] {
+                aluno.Nome, aluno.Idade.ToString(), aluno.Curso
+            }));
         }
+    }
 
-        private void label4_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
+    {
+        try
         {
+            var nome = txt_nome.Text;
+            var idade = int.Parse(txt_idade.Text);
+            var curso = txt_curso.Text;
 
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
+            foreach (var item in Alunos)
             {
-                var nome = txt_nome.Text;
-                var idade = int.Parse(txt_idade.Text);
-                var curso = txt_curso.Text;
-
-                foreach (var item in Alunos)
+                if (item.Nome == nome)
                 {
-                    if (item.Nome == nome)
-                    {
-                        MessageBox.Show($"Erro, Aluno {nome} já cadastrado");
-                        return;
-                    }
+                    MessageBox.Show($"Erro, Aluno {nome} já cadastrado");
+                    return;
                 }
+            }
 
-                var aluno = new Aluno(nome, idade, curso);
-                Alunos.Add(aluno);
+            var aluno = new Aluno(nome, idade, curso);
+            Alunos.Add(aluno);
+            AlunosRepository.Add(aluno);
 
-                lv_alunos.Items.Add(new ListViewItem(new string[] { 
-                    aluno.Nome, aluno.Idade.ToString(), aluno.Curso 
-                }));
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Por favor, digite uma idade válida");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            lv_alunos.Items.Add(new ListViewItem(new string[] { 
+                aluno.Nome, aluno.Idade.ToString(), aluno.Curso 
+            }));
+        }
+        catch (FormatException)
+        {
+            MessageBox.Show("Por favor, digite uma idade válida");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message);
         }
     }
 }
