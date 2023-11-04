@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using WebAPI3.Domain.Model.FuncionarioAggregate;
+using WebAPI3.Infraestructure.Repositories;
 using Microsoft.IdentityModel.Tokens;
+using WebAPI3.Application.Mapping;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using WebAPI3.Domain.Model;
-using WebAPI3.Infraestructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // It groups the routes based on the Controllers' names
 builder.Services.AddControllers();
+
+builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

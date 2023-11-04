@@ -1,5 +1,5 @@
 ﻿using WebAPI3.Domain.DTOs;
-using WebAPI3.Domain.Model;
+using WebAPI3.Domain.Model.FuncionarioAggregate;
 
 namespace WebAPI3.Infraestructure.Repositories;
 public class FuncionarioRepository : IFuncionarioRepository
@@ -19,7 +19,7 @@ public class FuncionarioRepository : IFuncionarioRepository
             new FuncionarioDTO()
             {
                 Id = b.id,
-                Nome = b.nome,
+                NomeFuncionario = b.nome,
                 Foto = b.foto
             })
             .ToList();

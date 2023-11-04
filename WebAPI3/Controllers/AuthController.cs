@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
 using WebAPI3.Application.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI3.Controllers;
 
@@ -12,7 +13,7 @@ public class AuthController : Controller
     {
         if (username == "Violett" && password == "Senai115@")
         {
-            var token = TokenService.GenerateToken(new Domain.Model.Funcionario(username, 12, null));
+            var token = TokenService.GenerateToken(new Funcionario(username, 12, null));
             return Ok(token);
 
         }

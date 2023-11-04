@@ -1,5 +1,6 @@
 ﻿using WebAPI3.Domain.DTOs;
-namespace WebAPI3.Domain.Model;
+
+namespace WebAPI3.Domain.Model.FuncionarioAggregate;
 
 public interface IFuncionarioRepository
 {

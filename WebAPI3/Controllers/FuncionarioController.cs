@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI3.Application.ViewModel;
-using WebAPI3.Domain.Model;
+using WebAPI3.Domain.Model.FuncionarioAggregate;
 
 namespace WebAPI3.Controllers;
 
@@ -11,11 +12,14 @@ public class FuncionarioController : ControllerBase
 {
     private readonly IFuncionarioRepository _funcionarioRepository;
     private readonly ILogger<FuncionarioController> _logger; //Used to create logs
+    private readonly IMapper _mapper;
 
-    public FuncionarioController(IFuncionarioRepository funcionarioRepository, ILogger<FuncionarioController> logger)
+    public FuncionarioController(IFuncionarioRepository funcionarioRepository, ILogger<FuncionarioController> logger, 
+        IMapper mapper)
     {
         _funcionarioRepository = funcionarioRepository ?? throw new ArgumentNullException(nameof(funcionarioRepository));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
 
     [Authorize]
@@ -45,6 +49,21 @@ public class FuncionarioController : ControllerBase
         //_logger.LogInformation("Teste");
 
         return Ok(funcionarios);
+    }
+
+    [Authorize]
+    [HttpGet]
+    [Route("{id}")]
+    public IActionResult Serach(int id)
+    {
+        //_logger.Log(LogLevel.Error, "Um Erro Ocorreu");
+
+        var funcionarios = _funcionarioRepository.Get(id);
+        var funcionariosDTO = _mapper.Map<Domain.DTOs.FuncionarioDTO>(funcionarios);
+
+        //_logger.LogInformation("Teste");
+
+        return Ok(funcionariosDTO);
     }
 
     [Authorize]

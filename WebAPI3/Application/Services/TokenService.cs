@@ -2,7 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebAPI3.Domain.Model;
+using WebAPI3.Domain.Model.FuncionarioAggregate;
 
 namespace WebAPI3.Application.Services;
 public class TokenService
