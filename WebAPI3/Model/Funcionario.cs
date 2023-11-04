@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebAPI3.Model;
+
 [Table("Funcionarios")]
 public class Funcionario
 {

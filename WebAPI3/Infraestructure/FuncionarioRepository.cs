@@ -14,4 +14,9 @@ public class FuncionarioRepository : IFuncionarioRepository
     {
         return _connection.Funcionarios.ToList();
     }
+
+    public Funcionario? Get(int id)
+    {
+        return _connection.Funcionarios.Find(id);
+    }
 }
