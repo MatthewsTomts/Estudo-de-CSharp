@@ -12,7 +12,7 @@ static public class AlunosRepository
     {
         using var conn = new Conn();
 
-        string query = @"INSERT INTO public.""Alunos""(nome, idade, curso) 
+        string query = @"INSERT INTO ""Alunos""(nome, idade, curso) 
             VALUES (@nome, @idade, @curso);";
 
         var result = conn.Connection.Execute(sql: query, param: aluno);
@@ -24,7 +24,7 @@ static public class AlunosRepository
     {
         using var conn = new Conn();
 
-        string query = @"SELECT * FROM public.""Alunos"";";
+        string query = @"SELECT * FROM ""Alunos"";";
 
         var alunos = conn.Connection.Query<Aluno>(sql: query);
 
