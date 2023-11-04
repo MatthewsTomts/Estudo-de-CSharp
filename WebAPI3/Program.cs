@@ -68,6 +68,14 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IFuncionarioRepository, FuncionarioRepository>();
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerGenOptions>();
 
+builder.Services.AddCors(options => {
+    options.AddPolicy(name: "myPolicy",
+        policy => {
+            policy.WithOrigins("https://localhost:8080", "http://localhost:8080")
+            .AllowAnyHeader().AllowAnyMethod();
+        });
+});
+
 var key = Encoding.ASCII.GetBytes(WebAPI3.ApiKey.Secret);
 
 builder.Services.AddAuthentication(x =>
@@ -105,6 +113,8 @@ if (app.Environment.IsDevelopment())
 } else {
     app.UseExceptionHandler("/error");
 }
+
+app.UseCors("myPolicy");
 
 app.UseHttpsRedirection();
 
