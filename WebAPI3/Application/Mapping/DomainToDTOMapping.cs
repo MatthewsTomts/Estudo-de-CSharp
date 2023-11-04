@@ -1,6 +1,6 @@
-﻿using AutoMapper;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
 using WebAPI3.Domain.DTOs;
-using WebAPI3.Domain.Model.FuncionarioAggregate;
+using AutoMapper;
 
 namespace WebAPI3.Application.Mapping;
 

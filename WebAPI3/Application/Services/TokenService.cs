@@ -1,8 +1,8 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
-using WebAPI3.Domain.Model.FuncionarioAggregate;
 
 namespace WebAPI3.Application.Services;
 public class TokenService

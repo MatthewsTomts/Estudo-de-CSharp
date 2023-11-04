@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
 using WebAPI3.Domain.Model.CompaniaAggregate;
-using WebAPI3.Domain.Model.FuncionarioAggregate;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebAPI3.Infraestructure;
 public class Connection : DbContext

@@ -1,5 +1,5 @@
-﻿using WebAPI3.Domain.DTOs;
-using WebAPI3.Domain.Model.FuncionarioAggregate;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
+using WebAPI3.Domain.DTOs;
 
 namespace WebAPI3.Infraestructure.Repositories;
 public class FuncionarioRepository : IFuncionarioRepository

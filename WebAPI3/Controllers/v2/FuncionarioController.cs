@@ -1,20 +1,23 @@
-﻿using AutoMapper;
+﻿using WebAPI3.Domain.Model.FuncionarioAggregate;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using WebAPI3.Application.ViewModel;
-using WebAPI3.Domain.Model.FuncionarioAggregate;
+using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 
-namespace WebAPI3.Controllers;
+namespace WebAPI3.Controllers.v2;
 
 [ApiController]
-[Route("api/v1/funcionario")]
+[Route("api/v2/funcionario")]
+// This route doesn't work
+//[Route("api/v{version:apiVersion}/funcionario")]
+[ApiVersion("2.0")]
 public class FuncionarioController : ControllerBase
 {
     private readonly IFuncionarioRepository _funcionarioRepository;
     private readonly ILogger<FuncionarioController> _logger; //Used to create logs
     private readonly IMapper _mapper;
 
-    public FuncionarioController(IFuncionarioRepository funcionarioRepository, ILogger<FuncionarioController> logger, 
+    public FuncionarioController(IFuncionarioRepository funcionarioRepository, ILogger<FuncionarioController> logger,
         IMapper mapper)
     {
         _funcionarioRepository = funcionarioRepository ?? throw new ArgumentNullException(nameof(funcionarioRepository));
@@ -76,7 +79,8 @@ public class FuncionarioController : ControllerBase
         {
             var dataBytes = System.IO.File.ReadAllBytes(funcionarios.foto);
             return File(dataBytes, "image/png");
-        } else
+        }
+        else
         {
             return BadRequest("Usuário não cadastro ou não possui foto");
         }
