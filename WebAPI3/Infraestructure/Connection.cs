@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebAPI3.Model;
+using WebAPI3.Domain.Model;
 
 namespace WebAPI3.Infraestructure;
 public class Connection : DbContext

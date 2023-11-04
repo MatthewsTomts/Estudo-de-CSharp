@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebAPI3.Model;
+namespace WebAPI3.Domain.Model;
 
 [Table("Funcionarios")]
 public class Funcionario

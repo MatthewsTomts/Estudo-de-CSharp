@@ -1,4 +1,4 @@
-﻿namespace WebAPI3.ViewModel;
+﻿namespace WebAPI3.Application.ViewModel;
 public class FuncionarioViewModel
 {
     public string Nome { get; set; }

@@ -2,9 +2,9 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebAPI3.Model;
+using WebAPI3.Domain.Model;
 
-namespace WebAPI3.Services;
+namespace WebAPI3.Application.Services;
 public class TokenService
 {
     public static object GenerateToken(Funcionario funcionario)

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI3.Model;
-using WebAPI3.ViewModel;
+using WebAPI3.Application.ViewModel;
+using WebAPI3.Domain.Model;
 
 namespace WebAPI3.Controllers;
 
@@ -10,10 +10,12 @@ namespace WebAPI3.Controllers;
 public class FuncionarioController : ControllerBase
 {
     private readonly IFuncionarioRepository _funcionarioRepository;
+    private readonly ILogger<FuncionarioController> _logger; //Used to create logs
 
-    public FuncionarioController(IFuncionarioRepository funcionarioRepository)
+    public FuncionarioController(IFuncionarioRepository funcionarioRepository, ILogger<FuncionarioController> logger)
     {
         _funcionarioRepository = funcionarioRepository ?? throw new ArgumentNullException(nameof(funcionarioRepository));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     [Authorize]
@@ -34,9 +36,13 @@ public class FuncionarioController : ControllerBase
 
     [Authorize]
     [HttpGet]
-    public IActionResult Get()
+    public IActionResult Get(int pageNumber, int pageQuantity)
     {
-        var funcionarios = _funcionarioRepository.Get();
+        //_logger.Log(LogLevel.Error, "Um Erro Ocorreu");
+
+        var funcionarios = _funcionarioRepository.Get(pageNumber, pageQuantity);
+
+        //_logger.LogInformation("Teste");
 
         return Ok(funcionarios);
     }
